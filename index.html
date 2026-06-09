@@ -1,5 +1,21 @@
 
-<head> 
+<head> AULA 09/06 - VIDEO
+    <title>quinta experiência de RA usando o AR.js e o A-frame. Marcador Hiro e um video</title>
+     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+      <video id="videofaisca" src="faísca.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsiline muted style="display: none"></video>
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      <a-marker preset="hiro">
+        <a-video src="#videofaisca" width="1" height="1.7" rotation="0 -90 0"></a-video>
+      </a-marker>	
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+<!-- <head> - MARCADOR PROPRIO
     <title>Primeira experiência de RA usando o AR.js e o A-frame. Marcador Hiro e uma imagem.</title>
      <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -19,9 +35,9 @@
       <a-entity camera></a-entity>
     </a-scene>
   </body>
-</html> 
+</html>  -->
 
-<!-- <head> 
+<!-- <head> - MODELO 3D
     <title>Primeira experiência de RA usando o AR.js e o A-frame. Marcador Hiro e uma imagem.</title>
      <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
